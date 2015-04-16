@@ -1,8 +1,10 @@
 == README
 
-Install vagrant. http://vagrantup.com
+Install vagrant (http://vagrantup.com) and VirtualBox (https://www.virtualbox.org)
 
-Run the app. It provides metadata to the IDP server which will be provisioned in the next step.
+In the app directory, run `bundle install`.
+
+Run the app: `rails s`. It provides metadata to the IDP server which will be provisioned in the next step.
 
 In the directory shibboleth-vagrant, run `vagrant up` to get the IDP server going.
 
