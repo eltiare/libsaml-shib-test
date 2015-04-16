@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://shibboleth.vagrant.dev/idp/shibboleth" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol"><Extensions><shibmd:Scope regexp="false">vagrant.dev</shibmd:Scope></Extensions><KeyDescriptor><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDRDCCAiygAwIBAgIVALZhcbfOJXFofxh21X2cBt0Nt3YEMA0GCSqGSIb3DQEB
+BQUAMCExHzAdBgNVBAMTFnNoaWJib2xldGgudmFncmFudC5kZXYwHhcNMTUwNDEw
+MjAwMTE1WhcNMzUwNDEwMjAwMTE1WjAhMR8wHQYDVQQDExZzaGliYm9sZXRoLnZh
+Z3JhbnQuZGV2MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlYoKfdve
+NWkscNo/qm6uG/BZIYpJz1zNYCuqlN29RdbWUqx9KR0YQpW78AFCdLjC53J38smE
+0hpf2KoPyqw/xeBMjYfiiS/eb8gQgAksJ20Te5s7ODOQOplgvdgVRtOhpOHyjHtw
+MfOvuaeTX8wUS4Unhjakdbh8Ef9CRPUu6DUYnr9uCFYg+oxIFvgfUArUm6jJzntr
+I61btIG47BmTGp9Pe15T0xhyf2JV4gQ7ZHuKFNaNP4FnRVWjpOX5ir0eGDN0n2DJ
+KBaXj0NaNPcLknzyvddAr70bqe1rR7CRRk+n2TSdqjsZ9QUD7SvalAlglzxOxgow
+wCF6QFH2QoURQwIDAQABo3MwcTBQBgNVHREESTBHghZzaGliYm9sZXRoLnZhZ3Jh
+bnQuZGV2hi1odHRwczovL3NoaWJib2xldGgudmFncmFudC5kZXYvaWRwL3NoaWJi
+b2xldGgwHQYDVR0OBBYEFEPMc/SlftBWMbPOyHzQDdSvClP7MA0GCSqGSIb3DQEB
+BQUAA4IBAQAJnILMvU8U0bjuB6H86vPRhEdxULP9Ooa+z6WU7iVUWayzGjSxbksj
+WkqAu1WmUawMxpGSSJQiJcq9pifaZs3k9D//WZqY/Ne1FeSvMupvbOrHPc/lyaHJ
+ucTraGNIwohPgLHaHAmbvm3EaIDcTy5TUyWGW0g/rtj9CtpZJBHxn15+A8ZsBcfD
+XQgF+Lllve47YBXOHZdMnsGSbNg5UwAQkkZQp8jzfa+yKZGDhaoniKRdZIzS8c6/
+HQsOWSpj+cDqNDnrwNZDbs+msfdWK8zQHgZcJn92rH8newX1yctEKE0FmSuJ2/TR
+wfYuBPS8mG6BxlxK8qVb6HvfCQfvxOfv</ds:X509Certificate></ds:X509Data></ds:KeyInfo></KeyDescriptor><ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shibboleth.vagrant.dev:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="1"/><ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibboleth.vagrant.dev:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="2"/><SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shibboleth.vagrant.dev/idp/profile/SAML2/Redirect/SLO"/><SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shibboleth.vagrant.dev/idp/profile/SAML2/POST/SLO"/><SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibboleth.vagrant.dev:8443/idp/profile/SAML2/SOAP/SLO"/><NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat><NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat><SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://shibboleth.vagrant.dev/idp/profile/Shibboleth/SSO"/><SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shibboleth.vagrant.dev/idp/profile/SAML2/POST/SSO"/><SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://shibboleth.vagrant.dev/idp/profile/SAML2/POST-SimpleSign/SSO"/><SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shibboleth.vagrant.dev/idp/profile/SAML2/Redirect/SSO"/></IDPSSODescriptor><AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol"><Extensions><shibmd:Scope regexp="false">vagrant.dev</shibmd:Scope></Extensions><KeyDescriptor><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDRDCCAiygAwIBAgIVALZhcbfOJXFofxh21X2cBt0Nt3YEMA0GCSqGSIb3DQEB
+BQUAMCExHzAdBgNVBAMTFnNoaWJib2xldGgudmFncmFudC5kZXYwHhcNMTUwNDEw
+MjAwMTE1WhcNMzUwNDEwMjAwMTE1WjAhMR8wHQYDVQQDExZzaGliYm9sZXRoLnZh
+Z3JhbnQuZGV2MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlYoKfdve
+NWkscNo/qm6uG/BZIYpJz1zNYCuqlN29RdbWUqx9KR0YQpW78AFCdLjC53J38smE
+0hpf2KoPyqw/xeBMjYfiiS/eb8gQgAksJ20Te5s7ODOQOplgvdgVRtOhpOHyjHtw
+MfOvuaeTX8wUS4Unhjakdbh8Ef9CRPUu6DUYnr9uCFYg+oxIFvgfUArUm6jJzntr
+I61btIG47BmTGp9Pe15T0xhyf2JV4gQ7ZHuKFNaNP4FnRVWjpOX5ir0eGDN0n2DJ
+KBaXj0NaNPcLknzyvddAr70bqe1rR7CRRk+n2TSdqjsZ9QUD7SvalAlglzxOxgow
+wCF6QFH2QoURQwIDAQABo3MwcTBQBgNVHREESTBHghZzaGliYm9sZXRoLnZhZ3Jh
+bnQuZGV2hi1odHRwczovL3NoaWJib2xldGgudmFncmFudC5kZXYvaWRwL3NoaWJi
+b2xldGgwHQYDVR0OBBYEFEPMc/SlftBWMbPOyHzQDdSvClP7MA0GCSqGSIb3DQEB
+BQUAA4IBAQAJnILMvU8U0bjuB6H86vPRhEdxULP9Ooa+z6WU7iVUWayzGjSxbksj
+WkqAu1WmUawMxpGSSJQiJcq9pifaZs3k9D//WZqY/Ne1FeSvMupvbOrHPc/lyaHJ
+ucTraGNIwohPgLHaHAmbvm3EaIDcTy5TUyWGW0g/rtj9CtpZJBHxn15+A8ZsBcfD
+XQgF+Lllve47YBXOHZdMnsGSbNg5UwAQkkZQp8jzfa+yKZGDhaoniKRdZIzS8c6/
+HQsOWSpj+cDqNDnrwNZDbs+msfdWK8zQHgZcJn92rH8newX1yctEKE0FmSuJ2/TR
+wfYuBPS8mG6BxlxK8qVb6HvfCQfvxOfv</ds:X509Certificate></ds:X509Data></ds:KeyInfo></KeyDescriptor><AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shibboleth.vagrant.dev:8443/idp/profile/SAML1/SOAP/AttributeQuery"/><AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibboleth.vagrant.dev:8443/idp/profile/SAML2/SOAP/AttributeQuery"/><NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat><NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat></AttributeAuthorityDescriptor></EntityDescriptor>

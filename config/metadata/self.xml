@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" ID="_0ccf2e80240b66866933f8ad2d0943193855facf" entityID="urn:testing:app">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:KeyName>a6f2879845757665a1f9f855b2b00085dfde8129</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509Certificate>MIIEETCCAvmgAwIBAgIJAL0BwTDFa0YRMA0GCSqGSIb3DQEBBQUAMGIxCzAJ
+BgNVBAYTAlVTMRMwEQYDVQQIEwpTb21lLVN0YXRlMREwDwYDVQQKEwhLdWFs
+aS5DbzEOMAwGA1UECxMFUmVhZHkxGzAZBgNVBAMTEnVybjpyZWFkeTprdWFs
+aS5jbzAgFw0xNTA0MTAxOTAwMDJaGA80NzUzMDMwNjE5MDAwMlowYjELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTClNvbWUtU3RhdGUxETAPBgNVBAoTCEt1YWxp
+LkNvMQ4wDAYDVQQLEwVSZWFkeTEbMBkGA1UEAxMSdXJuOnJlYWR5Omt1YWxp
+LmNvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0Kp+1D20R3Qs
+1KbuKLXZcHAoofsvMmMuO8W/g+uggPr+glIdRKWCkjBQRfC0aP3S4HSP9MJG
+NilUUTUsl4PC7onIPSyKqc2X92SYYz3Im4IS301IUXnU1Br+beyLR3qHcy/h
+Enu31hvIozYK6qswUyL2CYzJabpwNBIGWOZXtpnTjSio95+MiUElA4wNLTJD
+ZjvK48HeQdiUaylx3l4oUsL+a5Fk4WpTQ6JFKnM+R0hpCj+TEzkM066I3/Kr
+KgJeWoaBLHSTINnXRk2nzrqsbLGy0ncyzv8w+d1X3k709W6x882ZMnOCA3Ix
+ktZh/LM4UAoxrrdKaYGjCyC0y3qVZwIDAQABo4HHMIHEMB0GA1UdDgQWBBRX
++glxNYzipJ9LltZsG+7uVucmoDCBlAYDVR0jBIGMMIGJgBRX+glxNYzipJ9L
+ltZsG+7uVucmoKFmpGQwYjELMAkGA1UEBhMCVVMxEzARBgNVBAgTClNvbWUt
+U3RhdGUxETAPBgNVBAoTCEt1YWxpLkNvMQ4wDAYDVQQLEwVSZWFkeTEbMBkG
+A1UEAxMSdXJuOnJlYWR5Omt1YWxpLmNvggkAvQHBMMVrRhEwDAYDVR0TBAUw
+AwEB/zANBgkqhkiG9w0BAQUFAAOCAQEAwfvJhr7pIIo4tVeUMU8d/civ+5OP
+t35EyhIHj6fE9LgR0OGe7jR2zZ2GJNFGmgZDud6pJCQUopOnFCvbaHLoka7V
+vIIDkR+dokqLBKjSdzfbGYHByygkol6h9/7gyeNhXdiZC/t6wP9TlIIG8GED
+ahePC8lkAc4DkcVDpR1FIUsDa4Feej4LGlzIbfbyigB0b83vx6W/6AAHh+yw
+ZF3Rxs92jA5+Of9FNjBGyYRE73PHsJKxttQTqOJyhTprL3cmIHXV/9xhtUUC
+tLuKo3katI+4uTHequV+oN0I7s049TDAitdLJlY3zzJ5EBJPG4SnT0qG8/Sy
+qyiDflBtj2Q3Bg==
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://lvh.me:3000/saml/consume"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>

@@ -1,0 +1,19 @@
+== README
+
+Install vagrant. http://vagrantup.com
+
+Run the app. It provides metadata to the IDP server which will be provisioned in the next step.
+
+In the directory shibboleth-vagrant, run `vagrant up` to get the IDP server going.
+
+Open https://shibboleth.vagrant.dev/idp/shibboleth in a browser and save the contents to config/metadata/idp.xml
+
+Restart the app.
+
+Visit http://lvh.me:3000/saml/init . This will redirect you to the Shibboleth login page.
+
+Enter the credentials:
+* Username: shibadmin
+* Password: shibshib
+
+After successful login it will direct you back to /saml/consume, which will throw the error.

@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+required_plugins = %w( vagrant-landrush )
+required_plugins.each do |plugin|
+      system "vagrant plugin install #{plugin}" unless Vagrant.has_plugin? plugin
+end
+
+
+Vagrant.configure("2") do |config|
+  config.vm.box = 'precise64'
+  config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
+
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ['modifyvm', :id, '--memory', 2048]
+  end
+
+  config.vm.hostname = 'shibboleth.vagrant.dev'
+  config.vm.network :private_network, ip: '192.168.66.10'
+
+  config.vm.provision :puppet do |puppet|
+    puppet.manifests_path = "puppet"
+    puppet.manifest_file = "site.pp"
+    puppet.module_path = "puppet/modules"
+  end
+
+  config.landrush.enable
+end
